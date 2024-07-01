@@ -1,0 +1,78 @@
+@mixin general{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: lightskyblue;
+    border: 1px solid black;
+}
+@mixin formStyling{
+    margin-top: 100px;
+    width: 44%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 23%;
+    height: 200px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: lightsteelblue;
+}
+
+.header__nav--primary{
+    @include general();
+}
+
+.header__registerButton--primary{
+    height: 25px;
+    margin-top: 20px;
+    margin-left: 80%;
+    cursor: pointer;
+}
+
+.header__loginButton--primary{
+    height: 25px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+h1{
+    margin-left: 20px;
+}
+
+.form__login--primary{
+    @include general();
+    @include formStyling();
+}
+
+.form__register--primary{
+    @include general();
+    @include formStyling();
+}
+
+h2{
+    margin-left: 40%;
+}
+
+footer{
+    @include general();
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.div__text--primary{
+    margin-left: 5px;
+}
+
+button{
+    cursor: pointer;
+}
+
+.div__addButton--primary {
+    margin: 18% 49%;
+    width: 50px;
+    height: 40px;
+    border-radius: 3px;
+}
